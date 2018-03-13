@@ -108,14 +108,12 @@ Por exemplo: - Ação de andar para direita, pular e atirar
     return [0, 1, 0, 1, 1]
     
 # 4 - Técnicas do Decision Tree Agent
-Nesse agente foram usadas 2 técnicas básicas de inteligencia artificial:
-    - Regressão Logistica;
-    - Árvore de decisão.
+Nesse agente foi usada a técnica árvore de decisão.
     
-A primeira técnica (regressão logistica) foi ultilizada para decidir se o cenário é perigoso ou não.
+Com isto criamos três árvores, a primeira árvore foi ultilizada para decidir se o cenário é perigoso ou não.
 Para isto foi necessário a obtenção de um banco de dados com vários cenários e a informação se o cenário é perigoso ou não (a forma como obtemos esse banco será explicado em breve).
 
-Com isto desenvolvemos duas árvores de decisão, uma focada na obtenção de moedas e outra em matar inimigos e sair de zonas de perigo o mais rápido posspivel.
+Depois desenvolvemos duas árvores de decisão, uma focada na obtenção de moedas e outra em matar inimigos e sair de zonas de perigo o mais rápido posspivel.
 Nelas também obtemos um banco de dados de cenários.
 
 Para obtermos o banco de dados para usarmos na regressão e na árvore, foi desenvolvido um agente pseudo aleatório.

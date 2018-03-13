@@ -114,10 +114,9 @@ class DecisionTreeAgent(marioai.Agent):
                 self.flagDPA = 0
                 self.flagDA = 0
 
-                print 'D'
-                if (self.flagD % 50) == 0:
+                if (self.flagD % 20) == 0:
                     self.flag2 += 1
-                    if (self.flag2 % 10) == 0:
+                    if (self.flag2 % 20) == 0:
                         self.flagD += 1
                         self.flag2 += 1
                     else:
@@ -132,7 +131,6 @@ class DecisionTreeAgent(marioai.Agent):
                 self.flagDPA = 0
                 self.flagDA = 0
 
-                print 'P'
                 if (self.flagP % 10) == 0:
                     self.flagP += 1
                     return [0, 1, 0, 0, 0]
@@ -146,7 +144,6 @@ class DecisionTreeAgent(marioai.Agent):
                 self.flagDPA = 0
                 self.flagDA = 0
 
-                print 'DP'
                 if (self.flagDP % 20) == 0:
                     self.flagDP += 1
                     return [0, 1, 0, 0, 0]
@@ -159,7 +156,6 @@ class DecisionTreeAgent(marioai.Agent):
                 self.flagP = 0
                 self.flagDPA = 0
 
-                print 'DA'
                 if (self.flagDA % 5) == 0:
                     self.flagDA += 1
                     return [0, 1, 0, 0, 1]
@@ -173,7 +169,6 @@ class DecisionTreeAgent(marioai.Agent):
                 self.flagDP = 0
                 self.flagP = 0
 
-                print 'DPA'
                 if (self.flagDPA % 20) == 0:
                     self.flagDPA += 1
                     return [0, 1, 0, 0, 0]
